@@ -1,0 +1,90 @@
+body {
+  font-family: "roboto", sans-serif;
+  background-color: #e4e7e9;
+  padding:0;
+  margin:0;
+}
+html, body {
+ height: 100%;
+  
+}
+.akira {
+ text-align: center;
+  font-family: 'roboto';
+  font-weight: 300;
+  font-size:80px;
+  color:#6d6d6d;
+}
+.pic {
+ width:250px;
+  height:250px;
+  background-image:url(https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12987031_10207819290554017_7284645483713951468_n.jpg?oh=7a2dc85af5ef15b5c3f23a0f5e3ea0d1&oe=57B40CEC);
+  background-size: cover;
+  background-position: 25% 50%;
+border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12); 
+}
+.akira, .pic {
+ display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  
+}
+.title {
+ position: relative;
+  top:25%;
+  text-align: center;
+  width:100%;
+}
+.card {
+ height:100%; 
+  position:absolute;
+  width: 100%;
+}
+.first {
+  top:0;
+}
+.second {
+  top:100%;
+  background-color:#c8c8c8;
+}
+.sidenav {
+ width:100px;
+  height:100px;
+  position: fixed;
+  right:0;
+  width:16px;
+  right:8px;
+  top:31%;
+    z-index:+9999;
+}
+.btn {
+ width:16px;
+  height:16px;
+  background-color:grey;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 15px;
+  transition: all .25s ease-in-out;
+}
+.btn::after {
+ content: '';
+position: absolute;
+  top:50%;
+    left:50%;
+  width:0;
+  height:0;
+  border-radius: 50%;
+  background-color:white;
+  transition: all .25s ease-in-out;
+}
+.btn:hover {
+  box-shadow:inset 0px -4px white, inset 0px 4px white;  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2); 
+}
+.btn:hover::after {
+ width:80%;
+  top:9%;
+  left:10%;
+  height:80%;
+}

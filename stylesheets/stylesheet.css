@@ -8,6 +8,11 @@ html, body {
  height: 100%;
   
 }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-56 { font-size: 56px; }
 .akira {
  text-align: center;
   font-family: 'roboto';
@@ -23,6 +28,10 @@ html, body {
   background-position: 25% 50%;
 border-radius: 50%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12); 
+  transition: all .25s ease-in-out;
+}
+.pic:hover {
+  box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.24);
 }
 .akira, .pic {
  display: inline-block;
@@ -36,6 +45,7 @@ border-radius: 50%;
   text-align: center;
   width:100%;
 }
+
 .card {
  height:100%; 
   position:absolute;
@@ -66,7 +76,7 @@ border-radius: 50%;
   border-radius: 50%;
   position: relative;
   margin-top: 15px;
-  transition: all .25s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 .btn::after {
  content: '';
@@ -88,3 +98,55 @@ position: absolute;
   left:10%;
   height:80%;
 }
+.subtitle {
+ font-family:'libre baskerville';
+  font-weight:300;
+  color:#9f9f9f;
+  font-size:50px;
+  position:relative;
+ top:-25px;
+  
+}
+.akira, .subtitle {
+ display: block; 
+}
+.subtitle a {
+  color:#9f9f9f;
+  transition: all .25s ease-in-out;
+}
+.subtitle a:hover {
+ color:grey; 
+}
+.below {
+ text-decoration: none;
+  color:grey;
+  background-color:lightgrey;
+  border-radius:50%;
+  display: inline-block;
+  width:70px;
+  height:70px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+position: relative;
+  transition: all .25s ease-in-out;
+}
+.arrowup {
+ position: relative;
+  top:15%;
+}
+.belowwrap {
+  position:absolute;
+  bottom:25px;
+  width:100%;
+  left:0;
+  text-align: center;
+}
+.below:hover {
+transform: scale(1.5);
+ }
+
+
+
+
+

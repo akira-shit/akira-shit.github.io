@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <title>Akira Shitamori</title>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <title>Akira Shitamori</title>
   <link rel="stylesheet" href="stylesheets/stylesheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
   <script>
     $(document).ready(function(){
       
       $(".first").mouseover(function(){
-        $(".fi").css("background-color", "#607D8B");
+        $(".fi").css("background-color", "#424242");
       });
       $(".first").mouseout(function(){
         $(".fi").css("background-color", "grey");
       });
       $(".second").mouseover(function(){
-        $(".se").css("background-color", "#607D8B");
+        $(".se").css("background-color", "#424242");
       });
       $(".second").mouseout(function(){
         $(".se").css("background-color", "grey");
       });
-      $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
+      
     });
   </script>
+
 </head>
 <body>
     <div class="sidenav">
-      <a href="#fir" class="btn fi"></a>
-      <a href="#" class="btn se"></a>
+      <a href="#first" class="btn fi"></a>
+      <a href="#second" class="btn se"></a>
       <a href="#" class="btn th"></a>
       <a href="#" class="btn fo"></a>
       <a href="#" class="btn fif"></a>
   </div>
-  <div class="first card" id="fir">
+  <div class="first card" id="first">
     
   
   <div class="title">
@@ -52,13 +48,17 @@
  
   <div class="pic"></div>
  <h1 class="akira">
-  &nbsp; &nbsp; Akira Shitamori
+  Akira Shitamori
   </h1>
-    
+    <h2 class="subtitle">
+      <span><i>~3D artist in <a href="#" target="_blank">CreativityFilms</a></i></span>
+    </h2>
   </div>
-
+    <div class="belowwrap">
+<a href="#second" class="below"><i class="material-icons arrowup md-56">keyboard_arrow_down</i></a> </div>
   </div>
   <div class="second card" id="second">
+   
   </div>
 </body>
 </html>

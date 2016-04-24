@@ -8,6 +8,7 @@
   <title>Akira Shitamori</title>
   <link rel="stylesheet" href="stylesheets/stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
@@ -19,26 +20,20 @@
         $(".fi").css("background-color", "#424242");
       });
       $(".first").mouseout(function(){
-        $(".fi").css("background-color", "grey");
+        $(".fi").css("background-color", "#b4b4b4");
       });
       $(".second").mouseover(function(){
         $(".se").css("background-color", "#424242");
       });
       $(".second").mouseout(function(){
-        $(".se").css("background-color", "grey");
+        $(".se").css("background-color", "#b4b4b4");
       });
-       $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-           var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
+      $(".showmore").click(function(){
+        $(".spec").toggleClass("none");
+       $(".showmore").css("display", "none");
+        $(".second").css("height", "170vw");
+
+      });
     });
   </script>
 
@@ -69,7 +64,58 @@
 <a href="#second" class="below"><i class="material-icons arrowup md-56">keyboard_arrow_down</i></a> </div>
   </div>
   <div class="second card" id="second">
-   
+   <h1 class="workheader">
+     My Work
+    </h1>
+    <div class="grid">
+      
+      
+      <span class="work thumb  building1print"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+      
+     
+<span class="work thumb past_nostalgia"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+      
+<span class="work thumb clock_yellow"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb clock_white"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work poster"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work poster future"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb lightbulb_project"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb lightbulb"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb clock_sketch"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb object_a_day"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work banner primal spec"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb spec future_nostalgia"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb future1 spec"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb future2 spec"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb spec future3"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb spec bulbs1"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="spec work thumb  bulbs2"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="spec work thumb  bulbs3"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+<span class="work thumb  twitter_header spec"><span class="effect"><hr class="divider"><span class="intop inbox">Building #1 3D Print</span><span class="inbot inbox">Thumbnail</span></span></span>
+
+      <video class="spec" src="http://i.imgur.com/OfRE6Jz.webm" controls loop></video>
+      <div class="morewrap"><a href="#" class="showmore"><i class="fa fa-plus "></i> Show More</a></div> 
+
+
+    </div>
+    
+    
   </div>
 </body>
 </html>

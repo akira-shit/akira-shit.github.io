@@ -56,6 +56,7 @@ border-radius: 50%;
 }
 .second {
   top:100%;
+  height:70vw;
   background-color:#c8c8c8;
 }
 .sidenav {
@@ -71,7 +72,7 @@ border-radius: 50%;
 .btn {
  width:16px;
   height:16px;
-  background-color:grey;
+  background-color:#b4b4b4;
   display: block;
   border-radius: 50%;
   position: relative;
@@ -90,7 +91,7 @@ position: absolute;
   transition: all .25s ease-in-out;
 }
 .btn:hover {
-  box-shadow:inset 0px -4px white, inset 0px 4px white;  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2); 
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2); 
 }
 .btn:hover::after {
  width:80%;
@@ -145,8 +146,260 @@ position: relative;
 .below:hover {
 transform: scale(1.5);
  }
+.below:active {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0);
+}
 
 
 
 
+.workheader { 
+ text-align: center;
+  font-weight: 300;
+  color:#6D6D6D;
+  line-height: 10vw;
+  font-size: 75px;
+}
+.work {
+ display: inline-block;
+  float: left;
+  position: relative;
+  background-size:cover;
+}
+.thumb {
+ width:25%;
+  height:14vw;
+  background-color:#C8C8C8;
+  display: inline-block;
+  background-position: center center;
+  background-size: cover;
+}
+.building1print {
+  background-image:url(http://i.imgur.com/oFhkPuo.jpg);
+  
+}
+.future_nostalgia {
+  background-image:url(http://i.imgur.com/QpgkAlx.jpg);
+}
+.clock_yellow {
+  background-image: url(http://i.imgur.com/lofqLN0.jpg);
+}
+.clock_white {
+  background-image: url(http://i.imgur.com/vhJuvGP.jpg);
+}
+.poster {
+ width: 25%;
+  height: 28vw;
+   display: inline-block;
+  background-color:#C8C8C8;
+  background-image: url(http://i.imgur.com/5XbKfuq.jpg);
+  background-size: cover;
+}
+.poster, .thumb {
+ display: inline-block;
+}
+.future {
+  background-image:url(http://i.imgur.com/vRWh2q3.jpg);
+  height:28vw;
+  background-position: center;
+}
+.past_nostalgia {
+  background-image: url(http://i.imgur.com/xp5yZi4.jpg);
+  
+}
+.object_a_day {
+  background-image:url(http://i.imgur.com/vTjkQ9V.jpg);
+}
+.lightbulb_project {
+  background-image:url(http://i.imgur.com/YZjB5Lh.jpg);
+}
+.lightbulb {
+  background-image:url(http://i.imgur.com/hE0d2C6.jpg)
+}
+.clock_sketch {
+  background-image: url(http://i.imgur.com/Y9rvceU.png);
+}
 
+.banner {
+ display: inline-block;
+  width:100%;
+  height:28vw;
+  background-color:#C8C8C8;
+background-size:cover;
+  background-position:center center;
+}
+.primal {
+  background-image: url(http://i.imgur.com/4SFZtn7.jpg);
+  height:33vw;
+}
+.future1 {
+  background-image:url(http://i.imgur.com/baCt1tV.jpg);
+}
+.future2 {
+  background-image: url(http://i.imgur.com/YLJeqnr.jpg);
+}
+.future3 {
+  background-image: url(http://i.imgur.com/ee08yu3.jpg);
+}
+.bulbs1 {
+  background-image: url(http://i.imgur.com/S6l0HfN.png);
+}
+.bulbs2 {
+  background-image: url(http://i.imgur.com/qCdgJeU.jpg);
+}
+.bulbs3 {
+  background-image: url(http://i.imgur.com/OCrlyzA.png);
+}
+.twitter_header {
+  background-image: url(http://i.imgur.com/TbXFUlu.jpg);
+}
+video {
+ width:100%;
+}
+
+
+/* effects */
+
+.effect {
+ position: absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align: center;
+  top:0;
+  transition: all .25s ease-in-out;
+}
+.thumb::after, .banner::after, .poster::after {
+ content: ''; 
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0%;
+  height:100%;
+  background-color:grey;
+  transition: all .25s ease-in-out;
+}
+.thumb:hover::after, .banner:hover::after, .poster:hover::after {
+  width:8px;
+}
+.thumb::before, .banner::before, .poster::before {
+  content: '';
+ position: absolute;
+  width:100%;
+  top:0;
+  z-index: +10;
+  left:0;
+  height:0%;
+  background-color:grey;
+  transition: all .25s ease-in-out;
+}
+.thumb:hover::before, .banner:hover::before, .poster:hover::before {
+  height:8px;
+}
+
+.effect::after {
+  content: ''; 
+  position:absolute;
+  top:0;
+  right:0;
+  width:0%;
+  height:100%;
+  background-color:grey;
+  transition: all .25s ease-in-out;
+}
+.effect:hover::after {
+  width:8px;
+}
+.effect::before {
+  content: '';
+  position: absolute;
+  width:100%;
+  bottom:0;
+  right:0;
+  height:0%;
+  background-color:grey;
+  transition: all .25s ease-in-out;
+}
+.effect:hover::before {
+  height:8px;
+}
+.effect:hover {
+ background-color:rgba(255, 255, 255, 0.8); 
+}
+.spec {
+ display: none;
+}
+.none {
+display: inline-block;
+}
+
+
+
+
+.showmore {
+ text-decoration: none; 
+  display: inline-block;
+  position: relative;
+  color:#dedede;
+  background-color:#353535;
+  width:10%;
+  line-height: 40px;
+  top:20px;
+  border-radius: 3px;
+  transition: all .25s ease-in-out;
+}
+.showmore:hover {
+ background-color:#9a9a9a;
+  color:#2a2a2a;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.7);
+}
+.morewrap {
+  text-align: center;
+height:20px;
+  position: absolute;
+  width: 100%;
+  bottom:10%;
+  left:0;
+}
+
+
+
+
+.inbox {
+position:absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  left: 0;
+  font-size: 2vw; 
+  transition: all .25s ease-in-out;
+}
+.intop {
+  color:#4d4d4d;
+  top:50%;
+}
+.work:hover .intop {
+  top:22%;
+  opacity: 1;
+}
+.inbot {
+ bottom:50%;
+  color:grey;
+  font-family: 'libre baskerville';
+}
+.work:hover .inbot {
+ bottom:17%;
+  opacity: 1;
+}
+.divider {
+ border: 0;
+  position:relative;
+  top:50%;
+  width:0%;
+  height:3px;
+  background-color:#444444;
+  transition:all .25s ease-in-out;
+}
+.work:hover .divider {
+ width:75%;
+}

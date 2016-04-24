@@ -47,17 +47,23 @@ border-radius: 50%;
 }
 
 .card {
- height:100%; 
   position:absolute;
   width: 100%;
+  display: block;
 }
 .first {
   top:0;
+  height:100%; 
+
 }
 .second {
+  top: 100%;
+  background-color:#dedede;
+}
+.third {
+ height:100vh;
+  background-color:#cccccc;
   top:100%;
-  height:70vw;
-  background-color:#c8c8c8;
 }
 .sidenav {
  width:100px;
@@ -165,6 +171,7 @@ transform: scale(1.5);
   float: left;
   position: relative;
   background-size:cover;
+  cursor: default;
 }
 .thumb {
  width:25%;
@@ -344,9 +351,10 @@ display: inline-block;
   background-color:#353535;
   width:10%;
   line-height: 40px;
-  top:20px;
+  bottom:0px;
+  cursor: pointer;
   border-radius: 3px;
-  cursor:pointer;
+  z-index: +1;
   transition: all .25s ease-in-out;
 }
 .showmore:hover {
@@ -359,7 +367,7 @@ display: inline-block;
 height:20px;
   position: absolute;
   width: 100%;
-  bottom:10%;
+  bottom:3.5%;
   left:0;
 }
 
@@ -403,4 +411,35 @@ position:absolute;
 }
 .work:hover .divider {
  width:75%;
+}
+
+
+
+.aboutheader {
+ text-align:center; 
+  font-size:70px;
+  font-weight:300;
+  color:#6D6D6D;
+}
+.aboutbanner {
+ width:100%;
+  height:33vw;
+  position: relative;
+  background-image: url(https://d2yca1enuxtdrs.cloudfront.net/images/x1vbUW1b/ex3Rm7ArNj1F8Ds6SXK3/akiraheader.jpeg);
+  background-size:cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow:inset 0 2px 2px 0 rgba(0,0,0,0.14),inset 0 3px 1px -2px rgba(0,0,0,0.2),inset 0 1px 5px 0 rgba(0,0,0,0.12),inset 0 2px 2px 0 rgba(0,0,0,0.14),inset 0 3px 1px -2px rgba(0,0,0,0.2),inset 0 1px 5px 0 rgba(0,0,0,0.12); 
+}
+.about {
+ font-size:2.3vw;
+  position:absolute;
+  width:100%;
+  color:#484848;
+text-align: center;
+  line-height:5vw;
+  background-color:rgba(228, 231, 233, 0.89);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12); 
+  top:37%;
 }

@@ -346,6 +346,7 @@ display: inline-block;
   line-height: 40px;
   top:20px;
   border-radius: 3px;
+  cursor:pointer;
   transition: all .25s ease-in-out;
 }
 .showmore:hover {

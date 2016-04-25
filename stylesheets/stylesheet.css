@@ -67,22 +67,20 @@ border-radius: 50%;
 }
 .sidenav {
  width:100px;
-  height:100px;
   position: fixed;
-  right:0;
-  width:16px;
+ top:0;
+  left:0;
+  width:100%;
   right:8px;
-  top:31%;
     z-index:+9999;
 }
 .btn {
- width:16px;
-  height:16px;
+ width:calc(100% / );
+  float: right;
   background-color:#b4b4b4;
-  display: block;
+  display: inline-block;
   border-radius: 50%;
   position: relative;
-  margin-top: 15px;
   transition: all .15s ease-in-out;
 }
 .btn::after {
@@ -388,7 +386,7 @@ position:absolute;
   top:50%;
 }
 .work:hover .intop {
-  top:22%;
+  top:13%;
   opacity: 1;
 }
 .inbot {

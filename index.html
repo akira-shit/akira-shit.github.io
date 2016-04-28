@@ -50,13 +50,19 @@
       var y_scroll_pos = window.pageYOffset;
       var scroll_pos_test = 100;
 
-     if(y_scroll_pos > scroll_pos_test) {
+  
+
+      if(y_scroll_pos > scroll_pos_test) {
         $(".sidenav").css("opacity","1");
         $(".sidenav").css("top","0");
+        $(".backtotop").css("opacity","1");
+        $(".backtotop").css("right","10px");
       }
       else {
         $(".sidenav").css("opacity","0");
         $(".sidenav").css("top","-65px");
+        $(".backtotop").css("opacity","0");
+        $(".backtotop").css("right","-120px");
       }
 
     });
@@ -68,7 +74,7 @@
       
       <a href="#first" class="btn fi">Home</a>
   </div>
-  
+  <a href="#first" class="backtotop"><i class="material-icons up md-48">keyboard_arrow_up</i></a>
   
   <div class="first card" id="first">
     

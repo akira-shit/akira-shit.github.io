@@ -74,7 +74,7 @@ border-radius: 50%;
 
 .sidenav {
   position: fixed;
- top:0;
+ top:-65px;
   left:0;
   width:100%;
   background-color: #E4E7E9;

@@ -71,44 +71,49 @@ border-radius: 50%;
   background-color:grey;
   top:265%;
 }
+
 .sidenav {
- width:100px;
   position: fixed;
  top:0;
   left:0;
   width:100%;
-  right:8px;
+  background-color: #E4E7E9;
     z-index:+9999;
+  opacity: 0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: all .25s ease-in-out;
+}
+.sidenav:hover {
+ opacity: 1; 
+}
+.navicon {
+ height:100%;
+  position: absolute;
+  vertical-align: middle;
+}
+.navicon, .btn {
+ vertical-align: middle;
 }
 .btn {
- width:calc(100% / );
+  width:calc(100% / 8);
+  cursor: pointer;
+  text-decoration: none;
+  color:#767676;
+  line-height:65px;
+  text-align: center;
+  font-weight: 300;
   float: right;
-  background-color:#b4b4b4;
+  font-size: 30px;
   display: inline-block;
-  border-radius: 50%;
   position: relative;
-  transition: all .15s ease-in-out;
-}
-.btn::after {
- content: '';
-position: absolute;
-  top:50%;
-    left:50%;
-  width:0;
-  height:0;
-  border-radius: 50%;
-  background-color:white;
   transition: all .25s ease-in-out;
 }
 .btn:hover {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2); 
+  background-color:#ebebeb;
+  box-shadow: inset 8px 8px #808080, inset -8px -8px #808080;
 }
-.btn:hover::after {
- width:80%;
-  top:9%;
-  left:10%;
-  height:80%;
-}
+
+
 .subtitle {
  font-family:'libre baskerville';
   font-weight:300;
@@ -197,7 +202,6 @@ transform: scale(1.5);
 }
 
 
-
 .past_nostalgia {
   background-image: url(http://i.imgur.com/xp5yZi4.jpg);
   
@@ -281,7 +285,7 @@ display: inline-block;
   transition: all .25s ease-in-out;
 }
 .showmore:hover {
- background-color:#9a9a9a;
+ background-color:#b8b8b8;
   color:#2a2a2a;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.7);
 }

@@ -16,18 +16,11 @@
   <script>
     $(document).ready(function(){
       
-      $(".first").mouseover(function(){
-        $(".fi").css("background-color", "#424242");
-      });
-      $(".first").mouseout(function(){
-        $(".fi").css("background-color", "#b4b4b4");
-      });
-      $(".second").mouseover(function(){
-        $(".se").css("background-color", "#424242");
-      });
-      $(".second").mouseout(function(){
-        $(".se").css("background-color", "#b4b4b4");
-      });
+      
+      
+     
+      
+      
       $(".showmore").click(function(){
         $(".spec").toggleClass("none");
        $(".showmore").css("display", "none");
@@ -35,30 +28,35 @@
         
 
       });
-        $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-           var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-           }
-          }
-        });
+      
     });
   </script>
 
 </head>
 <body>
+  <script>
+    $(window).scroll(function() {
+      var y_scroll_pos = window.pageYOffset;
+      var scroll_pos_test = 100;
+
+      if(y_scroll_pos > scroll_pos_test) {
+        $(".sidenav").css("opacity","1");
+      }
+      else {
+        $(".sidenav").css("opacity","0");
+      }
+
+    });
+  </script>
     <div class="sidenav">
-      <a href="#first" class="btn fi"></a>
-      <a href="#second" class="btn se"></a>
-      <a href="#third" class="btn th"></a>
-      <a href="#" class="btn fo"></a>
-      <a href="#" class="btn fif"></a>
+      <img src="http://i.imgur.com/3kAYbxS.png" class="navicon">
+      <a href="#third" class="btn th">About Me</a>
+      <a href="#second" class="btn se">My Work</a>
+      
+      <a href="#first" class="btn fi">Home</a>
   </div>
+  
+  
   <div class="first card" id="first">
     
   
@@ -70,7 +68,7 @@
   Akira Shitamori
   </h1>
     <h2 class="subtitle">
-      <span><i>~Motion/Graphic Designer since May 2014</i></span>
+      <span><i>~3D artist in <a href="#" target="_blank">CreativityFilms</a></i></span>
     </h2>
   </div>
     <div class="belowwrap">
@@ -129,7 +127,17 @@
       <div class="aboutbanner">
         <p class="about">I'm a French/Japanese guy that lives in Greece and is interested in Graphic Design and CGI.</p>
       </div>
+      <!--
+      <div class="contact">
+        <h1 class="contactheader aboutheader">
+          Contact Me
+        </h1>
+        <div class="aboutbanner contactbanner">
+          
+        </div>
+      </div>-->
     </div>
   </div>
+
 </body>
 </html>

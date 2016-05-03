@@ -93,15 +93,15 @@ border-radius: 50%;
  vertical-align: middle;
 }
 .btn {
-  width:calc(100% / 8);
+  width:calc(100% / 7);
   cursor: pointer;
   text-decoration: none;
   color:#767676;
   line-height:65px;
   text-align: center;
   font-weight: 400;
-  text-transform: uppercase;
   float: right;
+  text-transform: uppercase;
   font-size: 20px;
   display: inline-block;
   position: relative;
@@ -388,3 +388,92 @@ text-align: center;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12); 
   top:37%;
 }
+
+
+.contact {
+  background-color:#c4c4c4;
+}
+.contactheader {
+  text-align:center; 
+  font-size:70px;
+  font-weight:300;
+  color:#5c5c5c;
+  line-height:150px;
+}
+.contactbanner {
+ width:100%;
+  height:300px;
+  position: relative;
+}
+.contactline {
+ position:absolute;
+  width:100%;
+  left:0;
+  top:35px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12); 
+}
+.soc {
+ text-decoration: none;
+  color:white;
+  display: inline-block;
+  line-height:120px;
+  float: left;
+  position: relative;
+  width: calc(100% / 4);
+  text-align:center;
+  font-size: 30px;
+  background-color:rgba(0, 0, 0, 0.27);
+  
+  transition: all .25s ease-in-out;
+}
+.soc:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.16);
+  
+}
+.soc img {
+ position: relative;
+  top:13px;
+}
+.soc::after {
+  content: '';
+position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100%;
+    height: 8%;
+  background-color:black;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: all .25s ease-in-out;
+}
+.soc:hover::after {
+bottom:92%;
+}
+.facebook::after {
+  background-color: #708bc5; 
+}
+.facebook {
+  background-color:#4E69A2; 
+}
+
+.twit {
+  background-color:#4aaae4; 
+}
+.twit::after {
+  background-color: #6bc0f3;
+}
+.sellfy {
+  background-color:#00B040;
+}
+.sellfy::after {
+  background-color:#35be67;
+
+}
+.behance {
+  background-color:#1d80da; 
+}
+.behance::after {
+  background-color:#3790e2; 
+}
+
+

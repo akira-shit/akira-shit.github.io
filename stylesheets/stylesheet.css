@@ -8,6 +8,75 @@ html, body {
  height: 100%;
   
 }
+
+
+@keyframes bodyanime {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1; 
+  }
+}
+  .whole {
+    display: none; 
+  }
+.loadergone {
+ display: none; 
+}
+  .loader {
+    width:30%;
+    height:12vw;
+    background-color:#E4E7E9;
+    z-index: +5;
+    position: absolute;
+    top:40%;
+    left: 35vw;
+    animation: loading .7s infinite;
+    transition: all .25s ease-in-out;
+  }
+  .loader::before {
+    content: 'Loading...';
+    text-transform: uppercase;
+    font-weight: 300;
+    position:absolute;
+    width:100%;
+    font-size: 30px;
+    color:#8d8d8d;
+    text-align: center;
+    font-family: 'roboto';
+    top:40%;
+  }
+  .loader::after {
+    content: '';
+    position: absolute;
+    width:100%;
+    height:10%;
+    bottom:0;
+    background-color:#808080;
+    animation: bar 2s infinite;
+    transition: all .25s ease-in-out;
+  }
+
+  @keyframes bar {
+    0% {
+      bottom:0;
+    }
+    50% {
+      bottom: calc(100% - 8px); 
+    }
+    100% {
+      bottom:0; 
+    }
+  }
+
+
+
+  .loaded {
+    display: block;
+    animation: bodyanime .8s;
+  }
+
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }

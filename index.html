@@ -28,6 +28,14 @@
         
 
       });
+      
+      
+      setTimeout(function(){
+        $('.whole').addClass('loaded');
+        $('.loader').addClass('loadergone');
+
+      }, 3000);
+      
       $('a[href*="#"]:not([href="#"])').click(function() {
                   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                      var target = $(this.hash);
@@ -45,6 +53,9 @@
 
 </head>
 <body>
+  <div class="loader">
+
+  </div>
   <script>
     $(window).scroll(function() {
       var y_scroll_pos = window.pageYOffset;
@@ -67,6 +78,9 @@
 
     });
   </script>
+  <div class="whole">
+    
+  
     <div class="sidenav">
       <img src="http://i.imgur.com/3kAYbxS.png" class="navicon">
       <a href="#contactme" class="btn">Contact Me</a>
@@ -166,6 +180,6 @@
       </div>
     </div>
   </div>
-
+  </div>
 </body>
 </html>
